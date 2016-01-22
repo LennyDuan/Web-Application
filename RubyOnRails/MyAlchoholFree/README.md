@@ -1,4 +1,4 @@
-The application have 2 parts, one is main MAF web application, and the second is wines trailer web supplier server.
+The application have 2 parts, one is main MAF web application, and the second is wines retailer web supplier server.
 
 MAF web server allows users to login/logout/sign-up, pick wins, search wines, check out and etc.
 
