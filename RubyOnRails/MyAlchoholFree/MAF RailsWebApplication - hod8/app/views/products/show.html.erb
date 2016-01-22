@@ -1,0 +1,89 @@
+<div class="show_product">
+	<div id="outer">
+		<div class="inner">Please Add Quantity: </div>
+		<div class="inner"> <%= form_tag(line_items_path(product_id: @product.id), method:"create") do %>
+			<%= hidden_field_tag :quantity, "1",  class:"quantity"%>
+			<%= submit_tag("1") %>
+		<% end %></div>
+		<div class="inner"> <%= form_tag(line_items_path(product_id: @product.id), method:"create") do %>
+			<%= hidden_field_tag :quantity, "2",  class:"quantity"%>
+			<%= submit_tag("2") %>
+		<% end %></div>
+		<div class="inner"> <%= form_tag(line_items_path(product_id: @product.id), method:"create") do %>
+			<%= hidden_field_tag :quantity, "3",  class:"quantity"%>
+			<%= submit_tag("3") %>
+		<% end %></div>
+		<div class="inner"> <%= form_tag(line_items_path(product_id: @product.id), method:"create") do %>
+			<%= hidden_field_tag :quantity, "4",  class:"quantity"%>
+			<%= submit_tag("4") %>
+		<% end %></div>
+		<div class="inner"><%= form_tag(line_items_path(product_id: @product.id), method:"create") do %>
+			<%= hidden_field_tag :quantity, "5",  class:"quantity"%>
+			<%= submit_tag("5") %>
+		<% end %></div>
+		<div class="inner"><%= form_tag(line_items_path(product_id: @product.id), method:"create") do %>
+			<%= hidden_field_tag :quantity, "6",  class:"quantity"%>
+			<%= submit_tag("6") %>
+		<% end %></div>
+		<div class="inner"><%= form_tag(line_items_path(product_id: @product.id), method:"create") do %>
+			<%= hidden_field_tag :quantity, "7",  class:"quantity"%>
+			<%= submit_tag("7") %>
+		<% end %></div>
+		
+		<div class="inner"><%= form_tag(line_items_path(product_id: @product.id), method:"create") do %>
+			<%= hidden_field_tag :quantity, "8",  class:"quantity"%>
+			<%= submit_tag("8") %>
+		<% end %></div>
+		<div class="inner"><%= form_tag(line_items_path(product_id: @product.id), method:"create") do %>
+			<%= hidden_field_tag :quantity, "9",  class:"quantity"%>
+			<%= submit_tag("9") %>
+		<% end %></div>
+		<div class="inner">
+			<%= form_tag(line_items_path(product_id: @product.id), method:"create") do %>
+				<%= hidden_field_tag :quantity, "10",  class:"quantity"%>
+				<%= submit_tag("10") %>
+			<% end %>
+		</div>
+	</div>
+	<p>
+	<%= image_tag(@product.image_url) %>
+	</p>
+	<p>
+	<strong>Title:</strong>
+	<%= @product.title %>
+	</p>
+	<p>
+	<strong>Description:</strong>
+	<%= @product.description %>
+	</p>
+	<p>
+	<strong>Price:</strong>
+	£ <%= @product.price %>
+</p>
+<p>
+<strong>Origin:</strong>
+<%= @product.origin %>
+</p>
+
+<p>
+<strong>Grape:</strong>
+<%= @product.grape %>
+</p>
+
+<p>
+<strong>Content:</strong>
+<%= @product.content %> %
+</p>
+
+<p>
+<strong>Size:</strong>
+<%= @product.size %> ml
+</p>
+
+<p>
+<strong>Company:</strong>
+<%= @product.company %>
+</p>
+
+</div> 
+<h2><a href="http://localhost:3000/store/index/" >Back To Home Page</a></h2>     

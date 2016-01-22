@@ -1,0 +1,29 @@
+<h1>Searching Result</h1>
+<table>
+	<% @products.each do |product| %>
+		<tr class="data">
+			<td>
+				<%= link_to image_tag(product.image_url), product_path(product.id)%>
+			</td>
+			<td>
+				<dt class="title"><strong><%= product.title %></dt></strong>
+				<dd class="description"><%= truncate(strip_tags(product.description), length: 100 ) %></dd>
+			</td>
+			<td>
+				<dt>Grape: <%= product.grape %></dt>
+				<dt>Origin: <%= product.origin %></dt>
+				<dt>Company: <%= product.company%></dt>
+				<dt><strong>Price: £<%= product.price%></dt></strong>
+				<br>
+				<%= form_tag(line_items_path(product_id: product.id), method:"create") do %>                                                    
+					<%= hidden_field_tag :quantity, "1",  class:"quantity"%>
+					<%= submit_tag("Add to Cart") %>
+				<% end %>
+				</dl>
+			</td>
+		</tr>
+	<% end %>
+</table>
+
+<h2><a href="http://localhost:3000/store/index/" >Back To Home Page</a></h2>
+

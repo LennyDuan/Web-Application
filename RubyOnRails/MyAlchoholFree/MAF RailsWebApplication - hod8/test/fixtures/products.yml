@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+PD1:
+        title: test
+        description: this test
+        image_url: test.jpg
+        price: 10
+        origin: GB
+        grape: great grape
+        content: 1.2
+        size: 600
+        company: mycompany
+
+
+PD2:
+        title: test
+        description: this test
+        image_url: test
+        price: 10
+        origin: GB
+        grape: great grape
+        content: 1.2
+        size: 600
+        company: mycompany

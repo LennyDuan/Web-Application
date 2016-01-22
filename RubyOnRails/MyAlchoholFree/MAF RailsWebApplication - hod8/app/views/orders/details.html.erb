@@ -1,0 +1,32 @@
+# 1 "index.html.erb"
+# 1 "<built-in>" 1
+# 1 "<built-in>" 3
+# 324 "<built-in>" 3
+# 1 "<command line>" 1
+# 1 "<built-in>" 2
+# 1 "index.html.erb" 2
+<h1>Users' Orders</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+	  <% @orders.each do |order| %>
+		  <tr>
+			  <td><%= order.name %></td>
+			  <td><%= order.address %></td>
+			  <td><%= order.email %></td>
+			  <td><%= order.phone %></td>
+		  </tr>
+	  <% end %>
+  </tbody>
+</table>
+
+
+

@@ -1,0 +1,12 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+OD1:
+        name: Hod
+        address: Hod Address
+        email: hod@aber.com
+        phone: 12345
+OD2:
+        name: Hod
+        address: Hod Address
+        email: hod@aber
+        phone: 12345

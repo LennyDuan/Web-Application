@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wine</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+	</head>
+
+	<body class='<%= controller.controller_name %>'> 
+		
+		<div id="banner"> 
+			 <a href="http://localhost:3000/store/index/">
+			<%= image_tag("table")%>
+			 </a>
+			<%= @page_title || "Wine Story" %>
+
+		</div>
+		<div id="columns">
+			<div id="side">
+				<ul>
+					<li><% if user_signed_in? %>
+						<strong>Welcome</strong><br>
+						<%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+					<br>
+						<%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %>
+					<% else %>
+						<%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> 
+					<br>
+						<%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+					<% end %></li>
+
+					<br>
+					<li><a href="http://localhost:3000/store/index/">Home</a></li>
+
+				</ul>
+				<div id="cart">
+					<% if @cart%>
+						<%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
+							<%= render @cart %>
+						<% end %>
+					<% end %>
+				</div>
+
+			</div>
+			<div id="main">
+				<% if @products != nil %>
+					<% if @products.length > 0 %>                                               
+						<%= form_tag(search_products_path,
+							     method: "get",
+							     id: "search") do %>
+							     <fieldset> 
+								     <%= text_field_tag(:query) %>
+								     <%= submit_tag("Search") %>
+							     </fieldset>
+						     <%end%>    
+					     <% end %>
+				     <%end%>
+
+
+				     <%= yield %>
+			</div>
+		</div>
+
+	</body>
+</html>

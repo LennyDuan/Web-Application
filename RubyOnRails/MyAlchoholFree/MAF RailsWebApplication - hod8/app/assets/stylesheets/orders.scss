@@ -1,0 +1,16 @@
+// Place all the styles related to the Orders controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.order {
+  margin-left: 6.3em;
+  table, tr, td {
+    border: 1px solid black;
+    font: 100% Monospace;
+    text-align: left;
+  }
+  tr,td {
+    color: #333300;
+    padding: 2px;
+  }
+
+}
