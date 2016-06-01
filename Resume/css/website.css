@@ -1,0 +1,117 @@
+div {
+  font-family: Book Antiqua;
+}
+.headerV1 {
+  background-color: #f4511e;
+}
+.logo {
+  display:inline-block;
+  margin: auto;
+}
+.logo img {
+  max-width: 15em;
+  opacity: 0.8; 
+  border: 2px solid #1abc9c;
+}
+.logo img:hover {
+  opacity: 1.0;
+}
+.logo h1 {
+  font-size:500%;
+  font-variant: small-caps;
+  color:white;
+}
+
+.artTitle h2{
+  border-radius: 15px;
+  border: 2px solid #1abc9c;
+  width: 8em;
+  transition: width 2s, height 2s, transform 2s;
+  background-color: white;
+}
+.artTitle h2:hover{
+  background-color: #1abc9c;
+  color: white;
+  transform: rotate(360deg);
+}
+.artTitle h2{
+  position: relative;
+  animation-name: change;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: 6;
+
+}
+@keyframes change {
+  0% {background-color:white; left:0; top 0;}
+  25%  {background-color:#f4511e; left:5%; top:0px;}
+  50%  {background-color:#1abc9c; left:10%; top:0px;}
+  75%   {background-color:#f4511e; left:5%; top:0px;}
+  100% {background-color:white; left:0; top:0}
+}
+.artText h4 {
+  transition: 0.5s;
+}
+/*
+.artText h4:hover{
+  border-bottom: 2px solid #1abc9c;
+  font-size: 200%;
+}
+*/
+.artFadeV1 h3 {
+  border-radius: 10px;
+  background-color: #f4511e;
+  color:white;
+
+  transition: 1s;
+}
+
+.artFadeV1 h3:hover {
+  color:#f4511e;
+  background-color: white;
+  border: 2px solid #f4511e;
+  height:200%;
+  
+}
+.artFadeV2 {
+  display: none;
+  border-bottom: 2px solid #f4511e;
+}
+
+.eduTitle h2{
+  border-radius: 15px;
+  border: 2px solid #1abc9c;
+  width: 8em;
+  transition: width 2s, height 2s, transform 2s;
+  background-color: white;
+}
+.eduTitle h2:hover{
+  background-color: #1abc9c;
+  color: white;
+  transform: rotate(360deg);
+}
+.eduTitle h2{
+  position: relative;
+  animation-name: eduChange;
+  animation-duration: 4s;
+  animation-delay: 3s;
+  animation-iteration-count: 5;
+  
+
+}
+@keyframes eduChange {
+  0% {background-color:white; left:0; top 0;}
+  25%  {background-color:red; left:5%; top:0px;}
+  50%  {background-color:orange; left:10%; top:0px;}
+  75%   {background-color: #1abc9c; left:5%; top:0px;}
+  100% {background-color:white; left:0; top:0}
+}
+/*
+.artText h4 {
+  transition: 0.5s;
+}
+.artText h4:hover{
+  border-bottom: 2px solid #1abc9c;
+  font-size: 200%;
+}
+*/

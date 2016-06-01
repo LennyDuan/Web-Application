@@ -1,0 +1,102 @@
+.refV1 {
+  border-radius: 5px;
+  background-color:#f4511e;
+  padding:1em;
+  margin-bottom:1em;
+  height:1em;
+  width:100%;
+  animation-name:refChange;
+  animation-duration:4s;
+  animation-iteration-count: infinite
+}
+@keyframes refChange {
+  0% {background-color:#00b300; left:0; top 0;}
+  25%  {background-color:#FF0000; left:0; top:0;}
+  50%  {background-color:#00CCFF; left:0; top:0;}
+  75%   {background-color:#f4511e; left:0; top:0;}
+  100% {background-color:#00b300; left:0; top:0}
+}
+.ref p{
+  display:none;
+}
+.ref div {
+  width:10em;
+  display:inline-block;
+  transition:2s; 
+  margin:1em;
+}
+.ref  div:hover {
+  width: 13em;
+  background-color: #DCDCDC ;
+  height:auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+}
+.refTitle h2{
+  border-radius: 15px;
+  border: 2px solid #1abc9c;
+  width: 8em;
+  transition: width 2s, height 2s, transform 2s;
+  background-color: white;
+}
+.refTitle h2:hover{
+  background-color: #1abc9c;
+  color: white;
+  transform: rotate(360deg);
+}
+.refTitle h2{
+  position: relative;
+  animation-name: refchange;
+  animation-duration: 4s;
+  animation-delay: 9s;
+  animation-iteration-count: 2;
+  
+
+}
+@keyframes refchange {
+  0% {background-color:white; left:0; top 0;}
+  25%  {background-color:#f4511e; left:5%; top:0px;}
+  50%  {background-color:#1abc9c; left:10%; top:0px;}
+  75%   {background-color:#f4511e; left:5%; top:0px;}
+  100% {background-color:white; left:0; top:0}
+}
+
+.thumbnail {
+  padding: 2em;
+  border: none;
+  border-radius: 15px;
+
+}
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+.carousel-control.right {
+  background: linear-gradient(to left, #DCDCDC, white);
+  color: #f4511e;     
+
+}
+.carousel-control.left {
+  background: linear-gradient(to left, white, #DCDCDC);
+  color: #f4511e;     
+}
+.carousel-indicators li {
+  border-color: #f4511e;
+}
+.carousel-indicators li.active {
+  background-color: #f4511e;
+}
+.item h4 {
+  font-size: 19px;
+  width:80%;
+  line-height: 1.375em;
+  font-weight: 400;
+  font-style: italic;
+  margin: 70px 0;
+}
+.item span {
+  font-variant: small-caps;
+  font-size:110%;
+  font-style: normal;
+  float:right;
+}

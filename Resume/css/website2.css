@@ -1,0 +1,120 @@
+.edufileV1{
+}
+.eduTable {
+  animation: move 1s ;
+}
+@keyframes move{
+  50% {border-top: 5px solid #ff9933;}
+}
+
+.eduTable table{
+  margin:auto;
+  border-style:none;
+  font-family: Georgia;
+}
+.eduTable th, td {
+  font-size: 150%;
+  padding: 0.5em 2em;
+}
+.eduTable tr:hover {
+  background-color:white;
+  color:#f4511e;
+  border-bottom: 2px solid #f4511e;
+}
+.eduShow {
+  display: none;
+  font-size:30%
+  border-bottom: 2px solid #f4511e;
+}
+.eduShow h6 {
+}
+
+.skillV1 {
+}
+.skillTitle h2{
+  border-radius: 15px;
+  border: 2px solid #1abc9c;
+  width: 8em;
+  transition: width 2s, height 2s, transform 2s;
+  background-color: white;
+}
+.skillTitle h2:hover{
+  background-color: #1abc9c;
+  color: white;
+  transform: rotate(360deg);
+}
+.skillTitle h2{
+  position: relative;
+  animation-name: skillChange;
+  animation-duration: 4s;
+  animation-delay: 5s;
+  animation-iteration-count: 4;
+  
+}
+@keyframes skillChange {
+  0% {background-color:white; left:0; top 0;}
+  25%  {background-color:#f4511e; left:5%; top:0px;}
+  50%  {background-color:#1abc9c; left:10%; top:0px;}
+  75%   {background-color:#f4511e; left:5%; top:0px;}
+  100% {background-color:white; left:0; top:0}
+}
+.skillHover h4 {
+  border-radius: 5px;
+  color:white;
+  background:#00b300;
+  width:12em;
+  font-family:Verdana;
+}
+.skillHover h4:hover {
+  border-radius: 5px;
+  border: 1px solid #00b300;
+  background-color: white;
+  color:#00b300;
+  text-shadow: 0 0 3px #00b300;
+}
+.skillHoverB h4 {
+  border-radius: 5px;
+  color:white;
+  background:#00CCFF;
+  width:12em;
+  font-family:Verdana;
+}
+.skillHoverB h4:hover {
+  border-radius: 5px;
+  border: 1px solid #00CCFF;
+  background-color: white;
+  color:#00CCFF;
+  text-shadow: 0 0 3px #00CCFF;
+}
+.skillHoverO h4 {
+  border-radius: 5px;
+  color:white;
+  background:#FF9933;
+  width:12em;
+  font-family:Verdana;
+}
+.skillHoverO h4:hover {
+  border-radius: 5px;
+  border: 1px solid #FF9933;
+  background-color: white;
+  color:#FF9933;
+  text-shadow: 0 0 3px #FF9933;
+}
+.skillHoverR h4 {
+  border-radius: 5px;
+  color:white;
+  background:#FF0000;
+  width:12em;
+  font-family:Verdana;
+}
+.skillHoverR h4:hover {
+  border-radius: 5px;
+  border: 1px solid #FF0000;
+  background-color: white;
+  color:#FF0000;
+  text-shadow: 0 0 3px #FF0000;
+}
+
+
+
+

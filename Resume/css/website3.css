@@ -1,0 +1,122 @@
+footer {                                                                    
+  background-color: #2d2d30;
+  color: #f5f5f5;
+  padding: 32px;
+}         
+
+footer a {
+  color: #f5f5f5;
+}
+
+footer a:hover {
+  color: #777;
+  text-decoration: none;
+}
+
+.expTitle h2{
+  border-radius: 15px;
+  border: 2px solid #1abc9c;
+  width: 8em;
+  transition: width 2s, height 2s, transform 2s;
+  background-color: white;
+}
+.expTitle h2:hover{
+  background-color: #1abc9c;
+  color: white;
+  transform: rotate(360deg);
+}
+.expTitle h2{
+  position: relative;
+  animation-name: expChange;
+  animation-duration: 4s;
+  animation-delay: 7s;
+  animation-iteration-count: 3;
+  
+
+}
+@keyframes expChange {
+  0% {background-color:white; left:0; top 0;}
+  25%  {background-color:#f4511e; left:5%; top:0px;}
+  50%  {background-color:#1abc9c; left:10%; top:0px;}
+  75%   {background-color:#f4511e; left:5%; top:0px;}
+  100% {background-color:white; left:0; top:0}
+}
+.expSlide {
+  height:10em;
+}
+.expSlide h3 h5 {
+  font-family: Book Antiqua;
+  max-width:70%;
+}
+.exptitle h2 {
+  border-radius: 3px;
+  width: 98%;
+  margin:auto;
+  font-family: Arial Black;
+  background:linear-gradient(to right,#00ccff, #00ffcc); 
+  color: white;
+}
+.exptitle h2:hover{
+  background-color: white;
+  border: 2px solid #f4511e;
+  color: #f4511e;
+}
+
+.exptitle2 h2 {
+  border-radius: 3px;
+  width: 98%;
+  margin:auto;
+  font-family: Arial Black;
+  background-color: #f4511e;
+  color: white;
+}
+.exptitle2 h2:hover{
+  background-color: white;
+  border: 2px solid #f4511e;
+  color: #f4511e;
+}
+.contTitle h2{
+  border-radius: 15px;
+  border: 2px solid #1abc9c;
+  width: 8em;
+  transition: width 2s, height 2s, transform 2s;
+  background-color: white;
+}
+.contTitle h2:hover{
+  background-color: #1abc9c;
+  color: white;
+  transform: rotate(360deg);
+}
+.contTitle h2{
+  position: relative;
+  animation-name: contChange;
+  animation-duration: 4s;
+  animation-delay: 11s;
+  animation-iteration-count: 1;
+  
+}
+@keyframes contChange {
+  0% {background-color:white; left:0; top 0;}
+  25%  {background-color:#f4511e; left:5%; top:0px;}
+  50%  {background-color:#1abc9c; left:10%; top:0px;}
+  75%   {background-color:#f4511e; left:5%; top:0px;}
+  100% {background-color:white; left:0; top:0}
+}
+.contV1 {
+  border-radius: 5px;
+  background-color:#f4511e;
+  padding:1em;
+  margin-bottom:1em;
+  height:1em;
+  width:100%;
+  animation-name:lineChange;
+  animation-duration:4s;
+  animation-iteration-count: infinite
+}
+@keyframes lineChange {
+	0% {background-color:#00b300; left:0; top 0;}
+  25%  {background-color:#f4511e; left:0; top:0;}
+  50%  {background-color:#00CCFF; left:0; top:0;}
+  75%   {background-color:#FF0000; left:0; top:0;}
+  100% {background-color:#00b300; left:0; top:0}
+}
