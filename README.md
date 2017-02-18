@@ -7,6 +7,6 @@
 ---
 #### Resume: includes my static resume website
 ###### This Static Page is my online resume website. Use lots of boostraps model and PHP (Because the Uni Server limitation). On the top right can see how many people have check this website and the number below my photo shows how many people like me. This page give some basic information about my profile, education background, programming skills I have, my working experience and some past projects (video screencast).
-###### To be continue... 
+###### To be continue...
 ---
-#### Personal Web: My personal website. To Intorduce myself as well as my thoughs
+#### Personal Web: My personal website. To Introduce myself as well as my thoughts
